@@ -3,6 +3,9 @@
     margin:0px;
     padding:0px;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* CSS VARIABLE */
 :root {
 
@@ -13,8 +16,9 @@
 #navbar{
     display:flex;
     align-items:center;
-    position:relative;
+    position:sticky;
     top:0px;
+    width: 100%;
 }
 #navbar::before{
     content:"";
@@ -66,19 +70,18 @@ margin:10px 34px;
     display:flex;
     flex-direction:column;
     padding:20px 300px;
-    top:0px;
-    left:0px;
     justify-content: center;
     align-items:center;
-    height:600px;
+    height:525px;
 }
 #home::before{
     content:"";
     /* We are putting ../ here as we have to take out file out of css */
     background: url('bg2.jpeg') no-repeat center center/cover;
-
+    top:0px;
+    left:0px;
     position:absolute;
-    height:100%;
+    height:550px;
     width:100%;
     z-index:-1;
     opacity:0.85
@@ -125,9 +128,8 @@ margin:auto;
 
 /* client section */
 #client-section{
-
  position:relative;
- margin:20px;
+ margin:5px 0px;
  padding:10px;
 }
 
@@ -165,7 +167,7 @@ margin:auto;
 #contact::before{
       content:"";
       position:absolute;
-      height:110%;
+      height:100%;
       width:100%;
       z-index:-1;
       opacity:0.7;
@@ -187,14 +189,7 @@ margin:auto;
     font-family: 'Patua One', cursive;
 }
 
-#contact-box input{
-     display:flex;
-    font-size: medium;
-    padding: 20px 60px;
-    margin:4px 4px;
-    
-    border-radius: 5px;
-}
+#contact-box input,
 #contact-box textarea{
     width:100%;
     padding:0.5rem;
@@ -205,9 +200,8 @@ margin:auto;
 footer{
     background:black;
     color:white;
-    margin-top:50px;
-    padding:10px 10px;
-    margin-bottom:0px;
+    padding:9px 20px;
+
 }
 
 /* utility classes */
